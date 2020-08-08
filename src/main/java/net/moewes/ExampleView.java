@@ -5,27 +5,22 @@ import javax.inject.Inject;
 import net.moewes.cloud.ui.UiBinder;
 import net.moewes.cloud.ui.UiComponent;
 import net.moewes.cloud.ui.annotations.CloudUiView;
+import net.moewes.cloud.ui.quarkus.runtime.CloudUi;
 
 @CloudUiView("/example")
 public class ExampleView extends UiComponent {
 
   private AppBean appBean;
-
-  private SBean sBean;
-
   private ReqBean reqBean;
-
   private ExampleModel model;
-
-  private int counter = 0;
+  private int counter;
 
   @Inject
-  public ExampleView(ReqBean reqBean, AppBean appBean) {
+  public ExampleView(ReqBean reqBean, AppBean appBean, CloudUi ui) {
     super("div");
     setId("top");
 
     this.reqBean = reqBean;
-    this.sBean = sBean;
     this.appBean = appBean;
 
     Random random = new Random();
@@ -58,24 +53,24 @@ public class ExampleView extends UiComponent {
     model = new ExampleModel();
     model.setValue("Model Binder Test");
     UiBinder uiBinder = new UiBinder();
-    uiBinder.bind(input, model, model::getValue, value -> model.setValue((String) value));
+    uiBinder.bind(input, model::getValue, value -> model.setValue((String) value));
 
     UiComponent button = new UiComponent("button");
     button.setInnerHtml("Send to Backend");
     button.addEventListener("click", event -> {
       System.out.println("Event");
-      model.setValue("Handler Event");
-      this.counter = this.counter + 1;
-      handleEvent();
-      return null; // FIXME
+      model.setValue("Handler Event" + ++counter);
     });
 
     add(button);
-  }
 
-  public void handleEvent() {
+    UiComponent button2 = new UiComponent("button");
+    button2.setInnerHtml("to second view");
+    button2.addEventListener("click", event -> {
+      System.out.println("Event 2");
+      ui.navigate( SecondView.class);
+    });
 
-    System.out.println("EventHandler");
-    System.out.println("Model value" + model.getValue());
+    add(button2);
   }
 }

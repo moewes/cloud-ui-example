@@ -11,13 +11,11 @@ public class SecondView extends UiComponent {
 
   private AppBean appBean;
 
-  private SBean sBean;
-
   private ReqBean reqBean;
 
   private ExampleModel model;
 
-  private int counter = 0;
+  private int counter;
 
   @Inject
   public SecondView(ReqBean reqBean, AppBean appBean) {
@@ -57,24 +55,15 @@ public class SecondView extends UiComponent {
     model = new ExampleModel();
     model.setValue("Model Binder Test");
     UiBinder uiBinder = new UiBinder();
-    uiBinder.bind(input, model, appBean::getValue, null);
+    uiBinder.bind(input, appBean::getValue, null);
 
     UiComponent button = new UiComponent("button");
     button.setInnerHtml("Send to Backend");
     button.addEventListener("click", event -> {
-      System.out.println("Event");
-      model.setValue("Aus dem Handler gesetzt");
+      model.setValue("set from EventHandler");
       this.counter = this.counter + 1;
-      handleEvent();
-      return null; // FIXME
     });
 
     add(button);
-  }
-
-  public void handleEvent() {
-
-    System.out.println("EventHandler");
-    System.out.println("Wert im Model" + model.getValue());
   }
 }
