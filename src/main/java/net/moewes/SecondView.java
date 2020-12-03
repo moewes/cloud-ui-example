@@ -19,7 +19,7 @@ public class SecondView extends UiComponent {
   @Inject
   public SecondView(ReqBean reqBean, AppBean appBean, CloudUi ui) {
     super("div");
-    setId("top");
+    //setId("top");
 
     this.reqBean = reqBean;
     this.appBean = appBean;
@@ -29,13 +29,13 @@ public class SecondView extends UiComponent {
 
     UiComponent title = new UiComponent("h1");
     title.setInnerHtml("Second View");
-    title.setId("id_1");
+    //title.setId("id_1");
 
     add(title);
 
     UiComponent xtst = new UiComponent("h2");
     xtst.setInnerHtml("Values " + appBean.getValue() + " (A) " + reqBean.getValue() + "(R)");
-    xtst.setId("id_1");
+    //xtst.setId("id_1");
 
     add(xtst);
 

@@ -1,5 +1,6 @@
 package net.moewes.todo;
 
+import java.util.logging.Logger;
 import javax.inject.Inject;
 import net.moewes.cloud.ui.UiComponent;
 import net.moewes.cloud.ui.annotations.CloudUiView;
@@ -18,6 +19,17 @@ public class TaskListView extends Div {
     repository.getTasks().forEach(item -> {
       Div taskItem = new Div();
       taskItem.setInnerHtml(item.getTask());
+
+      UiComponent delbutton = new UiComponent("button");
+      delbutton.setInnerHtml("Delete Task");
+      taskItem.add(delbutton);
+
+      delbutton.addEventListener("click", event -> {
+        Logger.getLogger("Delete").info("Task: " + item.getTask());
+        repository.deleteTask(item);
+        this.remove(taskItem);
+      });
+
       add(taskItem);
     });
 

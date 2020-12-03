@@ -1,5 +1,6 @@
 package net.moewes.todo;
 
+import java.util.UUID;
 import lombok.Data;
 
 @Data
@@ -11,4 +12,5 @@ public class TaskItem {
   }
 
   private String task;
+  private UUID id;
 }

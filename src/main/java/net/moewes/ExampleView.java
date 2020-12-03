@@ -18,7 +18,7 @@ public class ExampleView extends UiComponent {
   @Inject
   public ExampleView(ReqBean reqBean, AppBean appBean, CloudUi ui) {
     super("div");
-    setId("top");
+    //setId("top");
 
     this.reqBean = reqBean;
     this.appBean = appBean;
@@ -28,13 +28,13 @@ public class ExampleView extends UiComponent {
 
     UiComponent title = new UiComponent("h1");
     title.setInnerHtml("BeispielView " + counter);
-    title.setId("id_1");
+    //title.setId("id_1");
 
     add(title);
 
     UiComponent xtst = new UiComponent("h2");
     xtst.setInnerHtml("Values " + appBean.getValue() + " (A) "  + reqBean.getValue() + "(R)");
-    xtst.setId("id_1");
+    //xtst.setId("id_1");
 
     add(xtst);
 

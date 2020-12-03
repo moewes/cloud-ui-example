@@ -1,5 +1,6 @@
 package net.moewes.todo;
 
+import java.util.UUID;
 import javax.inject.Inject;
 import net.moewes.cloud.ui.UiBinder;
 import net.moewes.cloud.ui.UiComponent;
@@ -27,6 +28,7 @@ public class AddTaskView extends Div {
     saveButton.setInnerHtml("Save");
     saveButton.addEventListener("click", event -> {
       repository.getCurrentItem().ifPresent(taskItem -> {
+        taskItem.setId(UUID.randomUUID());
         repository.addTask(taskItem);
       });
       ui.navigate(TaskListView.class);
