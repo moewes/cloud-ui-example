@@ -18,6 +18,7 @@ public class TaskListView extends Div {
 
     repository.getTasks().forEach(item -> {
       Div taskItem = new Div();
+      taskItem.setId(item.getId().toString());
       taskItem.setInnerHtml(item.getTask());
 
       UiComponent delbutton = new UiComponent("button");
