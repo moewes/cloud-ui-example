@@ -1,4 +1,4 @@
-package net.moewes;
+package net.moewes.cloud.ui.example.multiview;
 
 import net.moewes.cloud.ui.UiComponent;
 import net.moewes.cloud.ui.annotations.CloudUiView;
@@ -11,8 +11,10 @@ public class MultiView extends Div {
   public MultiView() {
 
     add(new H1("Multiple Views:"));
-    add(getPortlet("net.moewes.MyView"));
-    add(getPortlet("net.moewes.ExampleView"));
+    add(getPortlet("net.moewes.cloud.ui.example.HtmlStandardElementsView"));
+    add(getPortlet("net.moewes.cloud.ui.example.Ui5View"));
+    add(getPortlet("net.moewes.cloud.ui.example.todo.TaskListView"));
+    add(getPortlet("net.moewes.cloud.ui.example.OverviewView"));
   }
 
   private UiComponent getPortlet(String backend) {

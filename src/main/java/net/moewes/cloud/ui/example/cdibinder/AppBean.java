@@ -1,14 +1,13 @@
-package net.moewes;
+package net.moewes.cloud.ui.example.cdibinder;
 
 import java.util.Random;
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.ApplicationScoped;
-import javax.enterprise.context.RequestScoped;
 import lombok.Getter;
 
-@RequestScoped
+@ApplicationScoped
 @Getter
-public class ReqBean {
+public class AppBean {
 
   private int value;
 

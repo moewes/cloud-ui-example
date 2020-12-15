@@ -1,4 +1,4 @@
-package net.moewes;
+package net.moewes.cloud.ui.example;
 
 import net.moewes.cloud.ui.UiComponent;
 import net.moewes.cloud.ui.annotations.CloudUiView;

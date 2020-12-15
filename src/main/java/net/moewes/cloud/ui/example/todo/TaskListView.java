@@ -1,4 +1,4 @@
-package net.moewes.todo;
+package net.moewes.cloud.ui.example.todo;
 
 import java.util.logging.Logger;
 import javax.inject.Inject;

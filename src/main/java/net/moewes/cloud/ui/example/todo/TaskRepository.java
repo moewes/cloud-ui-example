@@ -1,4 +1,4 @@
-package net.moewes.todo;
+package net.moewes.cloud.ui.example.todo;
 
 import java.util.ArrayList;
 import java.util.List;

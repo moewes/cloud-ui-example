@@ -1,4 +1,4 @@
-package net.moewes;
+package net.moewes.cloud.ui.example.cdibinder;
 
 import net.moewes.cloud.ui.annotations.CloudUiView;
 import net.moewes.cloud.ui.html.Div;
