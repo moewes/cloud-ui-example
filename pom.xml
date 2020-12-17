@@ -45,7 +45,7 @@
     <repository>
       <id>github_cloud_ui_ui5</id>
       <name>GitHub OWNER Apache Maven Packages</name>
-      <url>https://maven.pkg.github.com/moewes/cloud-ui-core</url>
+      <url>https://maven.pkg.github.com/moewes/cloud-ui-ui5</url>
       <snapshots>
         <enabled>true</enabled>
       </snapshots>
