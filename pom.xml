@@ -51,7 +51,7 @@
       </snapshots>
     </repository>
     <repository>
-      <id>github_cloud_ui_ui5</id>
+      <id>github_cloud_ui_vaadin</id>
       <name>GitHub OWNER Apache Maven Packages</name>
       <url>https://maven.pkg.github.com/moewes/cloud-ui-vaadin</url>
       <snapshots>
