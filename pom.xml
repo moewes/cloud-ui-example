@@ -20,6 +20,7 @@
     <quarkus.platform.version>1.10.3.Final</quarkus.platform.version>
     <surefire-plugin.version>2.22.1</surefire-plugin.version>
   </properties>
+
   <dependencyManagement>
     <dependencies>
       <dependency>
@@ -31,6 +32,34 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
+
+  <repositories>
+    <repository>
+      <id>github_cloud_ui_quarkus</id>
+      <name>GitHub OWNER Apache Maven Packages</name>
+      <url>https://maven.pkg.github.com/moewes/cloud-ui-quarkus</url>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+    <repository>
+      <id>github_cloud_ui_ui5</id>
+      <name>GitHub OWNER Apache Maven Packages</name>
+      <url>https://maven.pkg.github.com/moewes/cloud-ui-core</url>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+    <repository>
+      <id>github_cloud_ui_ui5</id>
+      <name>GitHub OWNER Apache Maven Packages</name>
+      <url>https://maven.pkg.github.com/moewes/cloud-ui-vaadin</url>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
+
   <dependencies>
     <dependency>
       <groupId>io.quarkus</groupId>
@@ -44,6 +73,11 @@
     <dependency>
       <groupId>net.moewes</groupId>
       <artifactId>cloud-ui-ui5</artifactId>
+      <version>0.1.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>net.moewes</groupId>
+      <artifactId>cloud-ui-vaadin</artifactId>
       <version>0.1.0-SNAPSHOT</version>
     </dependency>
     <dependency>

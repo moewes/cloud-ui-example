@@ -28,6 +28,10 @@ public class OverviewView extends Div {
     container.add(getLink("Multiple Views", "/multiViews"));
     add(container);
 
+    container = new Div();
+    container.add(getLink("Vaadin", "/vaadin"));
+    add(container);
+
   }
 
   private UiComponent getLink(String title, String url) {
