@@ -13,6 +13,7 @@ public class MultiView extends Div {
     add(new H1("Multiple Views:"));
     add(getPortlet("net.moewes.cloud.ui.example.HtmlStandardElementsView"));
     add(getPortlet("net.moewes.cloud.ui.example.Ui5View"));
+    add(getPortlet("net.moewes.cloud.ui.example.VaadinView"));
     add(getPortlet("net.moewes.cloud.ui.example.todo.TaskListView"));
     add(getPortlet("net.moewes.cloud.ui.example.OverviewView"));
   }
