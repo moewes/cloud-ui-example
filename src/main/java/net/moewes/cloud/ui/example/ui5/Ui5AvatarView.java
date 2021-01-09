@@ -1,5 +1,7 @@
 package net.moewes.cloud.ui.example.ui5;
 
+import java.util.Arrays;
+
 import net.moewes.cloud.ui.annotations.CloudUiView;
 import net.moewes.cloud.ui.html.Div;
 import net.moewes.cloud.ui.ui5.Ui5Avatar;
@@ -79,5 +81,16 @@ public class Ui5AvatarView extends Div { // TODO Layout
         iconxl.setSize(Ui5Avatar.Size.XL);
 
         panel3.add(iconxs, icons, iconm, iconl, iconxl);
+
+        Ui5Panel panel4 = new Ui5Panel("Avatar with Initials and different Color", true);
+        add(panel4);
+
+        Arrays.stream(Ui5Avatar.BackgroundColor.values()).forEach(backgroundColor -> {
+            Ui5Avatar colorAvatar = new Ui5Avatar();
+            colorAvatar.setBackgroundColor(backgroundColor);
+            colorAvatar.setInitials("MM");
+            colorAvatar.setInteractive(true);
+            panel4.add(colorAvatar);
+        });
     }
 }
