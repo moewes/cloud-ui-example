@@ -70,13 +70,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>io.quarkus</groupId>
-            <artifactId>quarkus-resteasy</artifactId>
-        </dependency>
-        <dependency>
             <groupId>net.moewes</groupId>
             <artifactId>cloud-ui-quarkus-extension</artifactId>
-            <version>0.1.0</version>
+            <version>0.2.0-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>net.moewes</groupId>
