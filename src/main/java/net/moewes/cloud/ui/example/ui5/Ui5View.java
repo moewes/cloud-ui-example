@@ -4,7 +4,6 @@ import net.moewes.cloud.ui.UiComponent;
 import net.moewes.cloud.ui.annotations.CloudUiView;
 import net.moewes.cloud.ui.html.Div;
 import net.moewes.cloud.ui.ui5.Ui5Button;
-import net.moewes.cloud.ui.ui5.Ui5Button.Design;
 import net.moewes.cloud.ui.ui5.Ui5Input;
 import net.moewes.cloud.ui.ui5.Ui5Label;
 
@@ -19,26 +18,26 @@ public class Ui5View extends Div {
 
         Ui5Button button = new Ui5Button();
         button.setText("Default");
-        button.setDesign(Design.Default);
+        // button.setDesign(Design.Default);
         buttonContainer.add(button);
 
         Ui5Button button2 = new Ui5Button();
         button2.setText("Emphasized");
-        button2.setDesign(Design.Emphasized);
+        //button2.setDesign(Design.Emphasized);
         buttonContainer.add(button2);
 
         Ui5Button button3 = new Ui5Button();
-        button3.setDesign(Design.Positive);
+        //button3.setDesign(Design.Positive);
         button3.setText("Positive");
         buttonContainer.add(button3);
 
         Ui5Button button4 = new Ui5Button();
-        button4.setDesign(Design.Negative);
+        //button4.setDesign(Design.Negative);
         button4.setText("Negative");
         buttonContainer.add(button4);
 
         Ui5Button button5 = new Ui5Button();
-        button5.setDesign(Design.Transparent);
+        //button5.setDesign(Design.Transparent);
         button5.setText("Transparent");
         buttonContainer.add(button5);
 
