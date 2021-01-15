@@ -7,9 +7,9 @@ import net.moewes.cloud.ui.ui5.Ui5Panel;
 import net.moewes.cloud.ui.ui5.Ui5Title;
 
 @CloudUiView("/ui5/button")
-public class ButtonlView extends Div {
+public class ButtonView extends Div {
 
-    public ButtonlView() {
+    public ButtonView() {
 
         add(new Ui5Title("Button"));
 

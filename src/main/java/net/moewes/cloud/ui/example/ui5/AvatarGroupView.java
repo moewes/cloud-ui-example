@@ -49,9 +49,17 @@ public class AvatarGroupView extends Div {
         panel4.add(group2);
 
         group2.addEventListener("click", event -> {
+            String notificationText = "";
             Optional<Object> targetRef = event.getParameter("targetRef");
-            //
-            Notification notification = new Notification("John Doe" + targetRef.get(), 2000); // TODO
+            Optional<Object> overflowButtonClicked = event.getParameter("overflowButtonClicked");
+            if ((Boolean) overflowButtonClicked.get()) {
+                notificationText = "overflow button clicked";
+            } else {
+                if (targetRef.isPresent()) {
+                    notificationText = "Avatar with id " + targetRef.get() + " clicked";
+                }
+            }
+            Notification notification = new Notification(notificationText, 2000);
             notification.open();
             add(notification);
         });
