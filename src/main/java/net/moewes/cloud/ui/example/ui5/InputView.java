@@ -2,11 +2,11 @@ package net.moewes.cloud.ui.example.ui5;
 
 import net.moewes.cloud.ui.annotations.CloudUiView;
 import net.moewes.cloud.ui.html.Div;
-import net.moewes.cloud.ui.ui5.Ui5Icon;
-import net.moewes.cloud.ui.ui5.Ui5Input;
-import net.moewes.cloud.ui.ui5.Ui5Label;
-import net.moewes.cloud.ui.ui5.Ui5Panel;
-import net.moewes.cloud.ui.ui5.Ui5Title;
+import net.moewes.cloudui.ui5.Ui5Icon;
+import net.moewes.cloudui.ui5.Ui5Input;
+import net.moewes.cloudui.ui5.Ui5Label;
+import net.moewes.cloudui.ui5.Ui5Panel;
+import net.moewes.cloudui.ui5.Ui5Title;
 
 @CloudUiView("/ui5/input")
 public class InputView extends Div {

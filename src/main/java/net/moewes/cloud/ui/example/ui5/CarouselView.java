@@ -7,12 +7,12 @@ import net.moewes.cloud.ui.annotations.CloudUiView;
 import net.moewes.cloud.ui.example.Ui5View;
 import net.moewes.cloud.ui.html.Div;
 import net.moewes.cloud.ui.quarkus.runtime.CloudUi;
-import net.moewes.cloud.ui.ui5.Ui5Bar;
-import net.moewes.cloud.ui.ui5.Ui5Button;
-import net.moewes.cloud.ui.ui5.Ui5Card;
-import net.moewes.cloud.ui.ui5.Ui5Carousel;
-import net.moewes.cloud.ui.ui5.Ui5Label;
-import net.moewes.cloud.ui.ui5.Ui5Panel;
+import net.moewes.cloudui.ui5.Ui5Bar;
+import net.moewes.cloudui.ui5.Ui5Button;
+import net.moewes.cloudui.ui5.Ui5Card;
+import net.moewes.cloudui.ui5.Ui5Carousel;
+import net.moewes.cloudui.ui5.Ui5Label;
+import net.moewes.cloudui.ui5.Ui5Panel;
 
 @CloudUiView("/ui5/carousel")
 public class CarouselView extends Div {
@@ -72,7 +72,7 @@ public class CarouselView extends Div {
 
         carousel2.setItemPerPageM(2);
         carousel2.setItemPerPageL(3);
-        
+
         Ui5Panel panel3 = new Ui5Panel("Carousel With Arrow Placement, SelectedIndex and Cyclic", true);
         add(panel3);
 

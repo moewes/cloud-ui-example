@@ -2,8 +2,8 @@ package net.moewes.cloud.ui.example;
 
 import net.moewes.cloud.ui.annotations.CloudUiView;
 import net.moewes.cloud.ui.html.Div;
-import net.moewes.cloud.ui.ui5.Ui5Link;
-import net.moewes.cloud.ui.ui5.Ui5Title;
+import net.moewes.cloudui.ui5.Ui5Link;
+import net.moewes.cloudui.ui5.Ui5Title;
 
 @CloudUiView("/ui5Elements")
 public class Ui5View extends Div {

@@ -14,11 +14,11 @@ import net.moewes.cloud.ui.annotations.CloudUiView;
 import net.moewes.cloud.ui.example.Ui5View;
 import net.moewes.cloud.ui.html.Div;
 import net.moewes.cloud.ui.quarkus.runtime.CloudUi;
-import net.moewes.cloud.ui.ui5.Ui5Bar;
-import net.moewes.cloud.ui.ui5.Ui5Button;
-import net.moewes.cloud.ui.ui5.Ui5Calendar;
-import net.moewes.cloud.ui.ui5.Ui5Label;
-import net.moewes.cloud.ui.ui5.Ui5Panel;
+import net.moewes.cloudui.ui5.Ui5Bar;
+import net.moewes.cloudui.ui5.Ui5Button;
+import net.moewes.cloudui.ui5.Ui5Calendar;
+import net.moewes.cloudui.ui5.Ui5Label;
+import net.moewes.cloudui.ui5.Ui5Panel;
 import net.moewes.cloudui.vaadin.Notification;
 
 @CloudUiView("/ui5/calendar")

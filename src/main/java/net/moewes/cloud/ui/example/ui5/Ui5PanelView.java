@@ -3,7 +3,7 @@ package net.moewes.cloud.ui.example.ui5;
 import net.moewes.cloud.ui.annotations.CloudUiView;
 import net.moewes.cloud.ui.html.Div;
 import net.moewes.cloud.ui.html.H1;
-import net.moewes.cloud.ui.ui5.Ui5Panel;
+import net.moewes.cloudui.ui5.Ui5Panel;
 
 @CloudUiView("/ui5/panel")
 public class Ui5PanelView extends Div {

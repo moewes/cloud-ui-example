@@ -5,10 +5,10 @@ import java.util.Optional;
 
 import net.moewes.cloud.ui.annotations.CloudUiView;
 import net.moewes.cloud.ui.html.Div;
-import net.moewes.cloud.ui.ui5.Ui5Avatar;
-import net.moewes.cloud.ui.ui5.Ui5AvatarGroup;
-import net.moewes.cloud.ui.ui5.Ui5Panel;
-import net.moewes.cloud.ui.ui5.Ui5Title;
+import net.moewes.cloudui.ui5.Ui5Avatar;
+import net.moewes.cloudui.ui5.Ui5AvatarGroup;
+import net.moewes.cloudui.ui5.Ui5Panel;
+import net.moewes.cloudui.ui5.Ui5Title;
 import net.moewes.cloudui.vaadin.Notification;
 
 @CloudUiView("/ui5/avatarGroup")

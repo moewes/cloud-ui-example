@@ -4,9 +4,9 @@ import java.util.Arrays;
 
 import net.moewes.cloud.ui.annotations.CloudUiView;
 import net.moewes.cloud.ui.html.Div;
-import net.moewes.cloud.ui.ui5.Ui5Avatar;
-import net.moewes.cloud.ui.ui5.Ui5Panel;
-import net.moewes.cloud.ui.ui5.Ui5Title;
+import net.moewes.cloudui.ui5.Ui5Avatar;
+import net.moewes.cloudui.ui5.Ui5Panel;
+import net.moewes.cloudui.ui5.Ui5Title;
 
 @CloudUiView("/ui5/avatar")
 public class Ui5AvatarView extends Div { // TODO Layout

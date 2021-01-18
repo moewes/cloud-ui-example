@@ -2,9 +2,9 @@ package net.moewes.cloud.ui.example.ui5;
 
 import net.moewes.cloud.ui.annotations.CloudUiView;
 import net.moewes.cloud.ui.html.Div;
-import net.moewes.cloud.ui.ui5.Ui5Icon;
-import net.moewes.cloud.ui.ui5.Ui5Panel;
-import net.moewes.cloud.ui.ui5.Ui5Title;
+import net.moewes.cloudui.ui5.Ui5Icon;
+import net.moewes.cloudui.ui5.Ui5Panel;
+import net.moewes.cloudui.ui5.Ui5Title;
 
 @CloudUiView("/ui5/icon")
 public class IconView extends Div {
@@ -12,7 +12,7 @@ public class IconView extends Div {
     public IconView() {
 
         add(new Ui5Title("Icon"));
-        
+
         Ui5Panel panel = new Ui5Panel("Basic Icons", true);
 
         panel.add(new Ui5Icon("activate"));
