@@ -4,9 +4,9 @@ import javax.enterprise.context.RequestScoped;
 
 import net.moewes.cloud.ui.UiComponent;
 import net.moewes.cloud.ui.annotations.CloudUiView;
-import net.moewes.cloud.ui.vaadin.AppLayout;
-import net.moewes.cloud.ui.vaadin.Tab;
-import net.moewes.cloud.ui.vaadin.Tabs;
+import net.moewes.cloudui.vaadin.AppLayout;
+import net.moewes.cloudui.vaadin.Tab;
+import net.moewes.cloudui.vaadin.Tabs;
 
 @CloudUiView("/vaadinAppLayout")
 @RequestScoped

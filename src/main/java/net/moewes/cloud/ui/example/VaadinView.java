@@ -2,9 +2,9 @@ package net.moewes.cloud.ui.example;
 
 import net.moewes.cloud.ui.UiComponent;
 import net.moewes.cloud.ui.annotations.CloudUiView;
-import net.moewes.cloud.ui.vaadin.Notification;
-import net.moewes.cloud.ui.vaadin.TextField;
-import net.moewes.cloud.ui.vaadin.VerticalLayout;
+import net.moewes.cloudui.vaadin.Notification;
+import net.moewes.cloudui.vaadin.TextField;
+import net.moewes.cloudui.vaadin.VerticalLayout;
 
 @CloudUiView("/vaadin")
 public class VaadinView extends VerticalLayout {

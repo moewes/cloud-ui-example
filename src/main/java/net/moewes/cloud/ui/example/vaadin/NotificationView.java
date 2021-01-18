@@ -3,9 +3,9 @@ package net.moewes.cloud.ui.example.vaadin;
 import java.util.Arrays;
 
 import net.moewes.cloud.ui.annotations.CloudUiView;
-import net.moewes.cloud.ui.vaadin.Button;
-import net.moewes.cloud.ui.vaadin.Notification;
-import net.moewes.cloud.ui.vaadin.VerticalLayout;
+import net.moewes.cloudui.vaadin.Button;
+import net.moewes.cloudui.vaadin.Notification;
+import net.moewes.cloudui.vaadin.VerticalLayout;
 
 @CloudUiView("/vaadinNotification")
 public class NotificationView extends VerticalLayout {

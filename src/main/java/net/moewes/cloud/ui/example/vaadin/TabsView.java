@@ -2,9 +2,9 @@ package net.moewes.cloud.ui.example.vaadin;
 
 import net.moewes.cloud.ui.UiComponent;
 import net.moewes.cloud.ui.annotations.CloudUiView;
-import net.moewes.cloud.ui.vaadin.Tab;
-import net.moewes.cloud.ui.vaadin.Tabs;
-import net.moewes.cloud.ui.vaadin.VerticalLayout;
+import net.moewes.cloudui.vaadin.Tab;
+import net.moewes.cloudui.vaadin.Tabs;
+import net.moewes.cloudui.vaadin.VerticalLayout;
 
 @CloudUiView("/vaadinTabs")
 public class TabsView extends VerticalLayout {

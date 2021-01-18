@@ -1,12 +1,12 @@
-package net.moewes.cloud.ui.example.vaadin;
+package net.moewes.cloud.ui.example.ui5;
 
 import net.moewes.cloud.ui.annotations.CloudUiView;
-import net.moewes.cloud.ui.html.Label;
+import net.moewes.cloud.ui.ui5.Ui5Input;
+import net.moewes.cloud.ui.ui5.Ui5Label;
 import net.moewes.cloudui.vaadin.FormLayout;
-import net.moewes.cloudui.vaadin.TextField;
 import net.moewes.cloudui.vaadin.VerticalLayout;
 
-@CloudUiView("/vaadin/form")
+@CloudUiView("/ui5/form")
 public class FormLayoutView extends VerticalLayout {
 
     public FormLayoutView() {
@@ -18,14 +18,14 @@ public class FormLayoutView extends VerticalLayout {
         //add(panel);
 
         FormLayout form = new FormLayout();
-        Label nameLabel = new Label("Name");
-        TextField nameField = new TextField();
+        Ui5Label nameLabel = new Ui5Label("Name");
+        Ui5Input nameField = new Ui5Input();
         form.addFormItem(nameField, nameLabel);
-        Label titleLabel = new Label("Title");
-        TextField titleField = new TextField();
+        Ui5Label titleLabel = new Ui5Label("Title");
+        Ui5Input titleField = new Ui5Input();
         form.addFormItem(titleField, titleLabel);
-        Label label = new Label("Very long label with some Words");
-        TextField field = new TextField();
+        Ui5Label label = new Ui5Label("Very long label with some Words");
+        Ui5Input field = new Ui5Input();
         // field.getElement().setAttribute("class", "full-width");
         form.addFormItem(field, label);
 

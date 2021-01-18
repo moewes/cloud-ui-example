@@ -19,7 +19,7 @@ import net.moewes.cloud.ui.ui5.Ui5Button;
 import net.moewes.cloud.ui.ui5.Ui5Calendar;
 import net.moewes.cloud.ui.ui5.Ui5Label;
 import net.moewes.cloud.ui.ui5.Ui5Panel;
-import net.moewes.cloud.ui.vaadin.Notification;
+import net.moewes.cloudui.vaadin.Notification;
 
 @CloudUiView("/ui5/calendar")
 public class CalendarView extends Div {

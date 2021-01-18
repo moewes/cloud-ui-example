@@ -6,7 +6,7 @@ import net.moewes.cloud.ui.html.H2;
 import net.moewes.cloud.ui.ui5.Ui5Timeline;
 import net.moewes.cloud.ui.ui5.Ui5TimelineItem;
 import net.moewes.cloud.ui.ui5.Ui5Title;
-import net.moewes.cloud.ui.vaadin.Notification;
+import net.moewes.cloudui.vaadin.Notification;
 
 @CloudUiView("/ui5/timeline") // TODO subpath does not work with events yet
 public class Ui5TimelineView extends Div {

@@ -9,7 +9,7 @@ import net.moewes.cloud.ui.ui5.Ui5Avatar;
 import net.moewes.cloud.ui.ui5.Ui5AvatarGroup;
 import net.moewes.cloud.ui.ui5.Ui5Panel;
 import net.moewes.cloud.ui.ui5.Ui5Title;
-import net.moewes.cloud.ui.vaadin.Notification;
+import net.moewes.cloudui.vaadin.Notification;
 
 @CloudUiView("/ui5/avatarGroup")
 public class AvatarGroupView extends Div {
