@@ -7,6 +7,7 @@ import javax.annotation.PostConstruct;
 import net.moewes.cloud.ui.annotations.CloudUiView;
 import net.moewes.cloudui.ui5.Ui5DateRangePicker;
 import net.moewes.cloudui.ui5.Ui5InputBase;
+import net.moewes.cloudui.ui5.Ui5Label;
 import net.moewes.cloudui.ui5.Ui5Panel;
 import net.moewes.cloudui.vaadin.VerticalLayout;
 
@@ -31,16 +32,22 @@ public class DateRangePickerView extends Ui5DemoBaseView {
 
         Ui5DateRangePicker picker2 = new Ui5DateRangePicker();
         panel2.add(picker2);
+        picker2.setFormatPattern("dd/MM/YYYY");
         picker2.setMinDate(LocalDate.of(2020, 12, 01));
-        picker1.setMaxDate(LocalDate.of(2021, 01, 31));
-        // TODO format pattern
+        picker2.setMaxDate(LocalDate.of(2021, 01, 31));
+        picker2.addEventListener("change", event -> {
+            event.getParameter("value").ifPresent(item -> {
+                panel2.add(new Ui5Label("Your input: " + item));
+                picker2.setValue((String) item);
+            });
+        });
 
         Ui5Panel panel3 = new Ui5Panel("DateRangePicker with format-pattern='long'", true);
         add(panel3);
 
         Ui5DateRangePicker picker3 = new Ui5DateRangePicker();
         panel3.add(picker3);
-        
+
         Ui5Panel statePanel = new Ui5Panel("Date Range Picker in states", true);
         add(statePanel);
 

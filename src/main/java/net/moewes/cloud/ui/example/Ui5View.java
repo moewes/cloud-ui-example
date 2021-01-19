@@ -20,7 +20,7 @@ public class Ui5View extends Div {
         add(new Ui5Link("Calendar", "/ui5/calendar"));
         add(new Ui5Link("Card", "/ui5/card"));
         add(new Ui5Link("Carousel", "/ui5/carousel"));
-        add(new Ui5Link("Check Box", "/ui5/ceckbox"));
+        add(new Ui5Link("Check Box", "/ui5/checkbox"));
         add(new Ui5Link("Combo Box", "/ui5/combobox"));
         add(new Ui5Link("Date Picker", "/ui5/datePicker"));
         add(new Ui5Link("Date Range Picker", "/ui5/dateRangePicker"));
