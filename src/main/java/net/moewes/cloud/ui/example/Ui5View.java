@@ -22,12 +22,18 @@ public class Ui5View extends Div {
         add(new Ui5Link("Carousel", "/ui5/carousel"));
         add(new Ui5Link("Check Box", "/ui5/ceckbox"));
         add(new Ui5Link("Combo Box", "/ui5/combobox"));
+        add(new Ui5Link("Date Picker", "/ui5/datePicker"));
+        add(new Ui5Link("Date Range Picker", "/ui5/dateRangePicker"));
+        add(new Ui5Link("Date Time Picker", "/ui5/dateTimePicker"));
+        add(new Ui5Link("Duration Picker", "/ui5/durationPicker"));
         add(new Ui5Link("Icon", "/ui5/icon"));
         add(new Ui5Link("Input", "/ui5/input"));
         add(new Ui5Link("Label", "/ui5/label"));
         add(new Ui5Link("Link", "/ui5/link"));
         add(new Ui5Link("Panel", "/ui5/panel"));
+        add(new Ui5Link("Text Area", "/ui5/textarea"));
         add(new Ui5Link("Timeline", "/ui5/timeline"));
+        add(new Ui5Link("Time Picker", "/ui5/timePicker"));
         add(new Ui5Link("Title", "/ui5/title"));
 
         getElement().setAttribute("style", "display: flex; flex-direction: column; gap: 0.5em");
