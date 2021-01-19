@@ -3,8 +3,8 @@ package net.moewes.cloudui.example.ui5;
 import java.util.Arrays;
 import java.util.Optional;
 
-import net.moewes.cloud.ui.annotations.CloudUiView;
-import net.moewes.cloud.ui.html.Div;
+import net.moewes.cloudui.annotations.CloudUiView;
+import net.moewes.cloudui.html.Div;
 import net.moewes.cloudui.ui5.Ui5Avatar;
 import net.moewes.cloudui.ui5.Ui5AvatarGroup;
 import net.moewes.cloudui.ui5.Ui5Panel;

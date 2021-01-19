@@ -1,8 +1,8 @@
 package net.moewes.cloudui.example.cdibinder;
 
-import net.moewes.cloud.ui.annotations.CloudUiView;
-import net.moewes.cloud.ui.html.Div;
-import net.moewes.cloud.ui.html.H1;
+import net.moewes.cloudui.annotations.CloudUiView;
+import net.moewes.cloudui.html.Div;
+import net.moewes.cloudui.html.H1;
 
 @CloudUiView("/myview")
 public class MyView extends Div {

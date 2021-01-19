@@ -1,13 +1,13 @@
 package net.moewes.cloudui.example;
 
-import net.moewes.cloud.ui.annotations.CloudUiView;
-import net.moewes.cloud.ui.html.Div;
-import net.moewes.cloud.ui.html.H1;
-import net.moewes.cloud.ui.html.H2;
-import net.moewes.cloud.ui.html.H3;
-import net.moewes.cloud.ui.html.H4;
-import net.moewes.cloud.ui.html.H5;
-import net.moewes.cloud.ui.html.H6;
+import net.moewes.cloudui.annotations.CloudUiView;
+import net.moewes.cloudui.html.Div;
+import net.moewes.cloudui.html.H1;
+import net.moewes.cloudui.html.H2;
+import net.moewes.cloudui.html.H3;
+import net.moewes.cloudui.html.H4;
+import net.moewes.cloudui.html.H5;
+import net.moewes.cloudui.html.H6;
 
 @CloudUiView("/htmlElements")
 public class HtmlStandardElementsView extends Div {

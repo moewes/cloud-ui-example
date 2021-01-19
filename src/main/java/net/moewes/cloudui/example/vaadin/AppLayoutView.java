@@ -2,8 +2,8 @@ package net.moewes.cloudui.example.vaadin;
 
 import javax.enterprise.context.RequestScoped;
 
-import net.moewes.cloud.ui.UiComponent;
-import net.moewes.cloud.ui.annotations.CloudUiView;
+import net.moewes.cloudui.UiComponent;
+import net.moewes.cloudui.annotations.CloudUiView;
 import net.moewes.cloudui.vaadin.AppLayout;
 import net.moewes.cloudui.vaadin.Tab;
 import net.moewes.cloudui.vaadin.Tabs;

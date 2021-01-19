@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 import javax.annotation.PostConstruct;
 
-import net.moewes.cloud.ui.annotations.CloudUiView;
+import net.moewes.cloudui.annotations.CloudUiView;
 import net.moewes.cloudui.ui5.Ui5DateRangePicker;
 import net.moewes.cloudui.ui5.Ui5InputBase;
 import net.moewes.cloudui.ui5.Ui5Label;

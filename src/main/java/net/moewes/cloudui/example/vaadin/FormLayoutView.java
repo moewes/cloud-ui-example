@@ -1,7 +1,7 @@
 package net.moewes.cloudui.example.vaadin;
 
-import net.moewes.cloud.ui.annotations.CloudUiView;
-import net.moewes.cloud.ui.html.Label;
+import net.moewes.cloudui.annotations.CloudUiView;
+import net.moewes.cloudui.html.Label;
 import net.moewes.cloudui.vaadin.FormLayout;
 import net.moewes.cloudui.vaadin.TextField;
 import net.moewes.cloudui.vaadin.VerticalLayout;

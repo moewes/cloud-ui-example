@@ -1,6 +1,6 @@
 package net.moewes.cloudui.example.ui5;
 
-import net.moewes.cloud.ui.annotations.CloudUiView;
+import net.moewes.cloudui.annotations.CloudUiView;
 import net.moewes.cloudui.ui5.Ui5Input;
 import net.moewes.cloudui.ui5.Ui5Label;
 import net.moewes.cloudui.vaadin.FormLayout;

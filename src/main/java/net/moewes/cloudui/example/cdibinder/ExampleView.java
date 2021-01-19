@@ -5,10 +5,10 @@ import java.util.UUID;
 
 import javax.inject.Inject;
 
-import net.moewes.cloud.ui.UiBinder;
-import net.moewes.cloud.ui.UiComponent;
-import net.moewes.cloud.ui.annotations.CloudUiView;
-import net.moewes.cloud.ui.quarkus.runtime.CloudUi;
+import net.moewes.cloudui.UiBinder;
+import net.moewes.cloudui.UiComponent;
+import net.moewes.cloudui.annotations.CloudUiView;
+import net.moewes.cloudui.quarkus.runtime.CloudUi;
 
 @CloudUiView("/example")
 public class ExampleView extends UiComponent {

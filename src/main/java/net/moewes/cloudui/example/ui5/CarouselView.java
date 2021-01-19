@@ -2,11 +2,11 @@ package net.moewes.cloudui.example.ui5;
 
 import javax.inject.Inject;
 
-import net.moewes.cloud.ui.UiComponent;
-import net.moewes.cloud.ui.annotations.CloudUiView;
-import net.moewes.cloud.ui.html.Div;
-import net.moewes.cloud.ui.quarkus.runtime.CloudUi;
+import net.moewes.cloudui.UiComponent;
+import net.moewes.cloudui.annotations.CloudUiView;
 import net.moewes.cloudui.example.Ui5View;
+import net.moewes.cloudui.html.Div;
+import net.moewes.cloudui.quarkus.runtime.CloudUi;
 import net.moewes.cloudui.ui5.Ui5Bar;
 import net.moewes.cloudui.ui5.Ui5Button;
 import net.moewes.cloudui.ui5.Ui5Card;

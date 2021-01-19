@@ -1,9 +1,9 @@
 package net.moewes.cloudui.example.multiview;
 
-import net.moewes.cloud.ui.UiComponent;
-import net.moewes.cloud.ui.annotations.CloudUiView;
-import net.moewes.cloud.ui.html.Div;
-import net.moewes.cloud.ui.html.H1;
+import net.moewes.cloudui.UiComponent;
+import net.moewes.cloudui.annotations.CloudUiView;
+import net.moewes.cloudui.html.Div;
+import net.moewes.cloudui.html.H1;
 
 @CloudUiView("/multiViews")
 public class MultiView extends Div {
