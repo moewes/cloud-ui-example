@@ -11,13 +11,13 @@ public class FormLayoutView extends VerticalLayout {
 
     public FormLayoutView() {
 
-        //getElement().setAttribute("theme", "spacing");
-        //add(new Ui5Title("Label"));
-
-        //Ui5Panel panel = new Ui5Panel("Basic Label", true);
-        //add(panel);
-
         FormLayout form = new FormLayout();
+
+        form.addResponsiveStep("0", 1, FormLayout.LabelPosition.TOP);
+        form.addResponsiveStep("30em", 1, FormLayout.LabelPosition.ASIDE);
+        form.addResponsiveStep("40em", 2, FormLayout.LabelPosition.TOP);
+        form.addResponsiveStep("50em", 2, FormLayout.LabelPosition.ASIDE);
+
         Label nameLabel = new Label("Name");
         TextField nameField = new TextField();
         form.addFormItem(nameField, nameLabel);
@@ -26,10 +26,7 @@ public class FormLayoutView extends VerticalLayout {
         form.addFormItem(titleField, titleLabel);
         Label label = new Label("Very long label with some Words");
         TextField field = new TextField();
-        // field.getElement().setAttribute("class", "full-width");
         form.addFormItem(field, label);
-
-        //panel.add(form);
 
         add(form);
 
