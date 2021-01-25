@@ -35,6 +35,7 @@ public class Ui5View extends Div {
         add(new Ui5Link("Timeline", "/ui5/timeline"));
         add(new Ui5Link("Time Picker", "/ui5/timePicker"));
         add(new Ui5Link("Title", "/ui5/title"));
+        add(new Ui5Link("Wizard", "/ui5/wizard"));
 
         getElement().setAttribute("style", "display: flex; flex-direction: column; gap: 0.5em");
     }

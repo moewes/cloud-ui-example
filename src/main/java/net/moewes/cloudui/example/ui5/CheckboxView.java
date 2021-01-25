@@ -12,6 +12,7 @@ import net.moewes.cloudui.ui5.Ui5CheckBox;
 import net.moewes.cloudui.ui5.Ui5InputBase;
 import net.moewes.cloudui.ui5.Ui5Label;
 import net.moewes.cloudui.ui5.Ui5Panel;
+import net.moewes.cloudui.vaadin.Notification;
 
 @CloudUiView("/ui5/checkbox")
 public class CheckboxView extends Div {
@@ -36,10 +37,18 @@ public class CheckboxView extends Div {
 
         Ui5CheckBox cb1 = new Ui5CheckBox();
         cb1.setText("Chocolate");
+        cb1.addEventListener("change", uiEvent -> {
+            Notification notification = new Notification();
+            add(notification);
+            notification.setText("Value change ");
+            notification.open();
+        });
         Ui5CheckBox cb2 = new Ui5CheckBox();
         cb2.setText("Strawberry");
+        cb2.setValue("true");
         Ui5CheckBox cb3 = new Ui5CheckBox();
         cb3.setText("Waffles");
+        cb3.getElement().setAttribute("checked", "true");
         //cb3.setValueState(ERROR);
         Ui5CheckBox cb4 = new Ui5CheckBox();
         cb4.setText("Cake");
