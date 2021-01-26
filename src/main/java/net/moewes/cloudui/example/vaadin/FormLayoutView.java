@@ -3,8 +3,8 @@ package net.moewes.cloudui.example.vaadin;
 import net.moewes.cloudui.annotations.CloudUiView;
 import net.moewes.cloudui.html.Label;
 import net.moewes.cloudui.vaadin.FormLayout;
-import net.moewes.cloudui.vaadin.TextField;
 import net.moewes.cloudui.vaadin.VerticalLayout;
+import net.moewes.cloudui.vaadin.input.TextField;
 
 @CloudUiView("/vaadin/form")
 public class FormLayoutView extends VerticalLayout {
