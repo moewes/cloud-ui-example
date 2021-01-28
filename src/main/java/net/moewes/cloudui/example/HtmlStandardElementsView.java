@@ -14,6 +14,8 @@ public class HtmlStandardElementsView extends Div {
 
     public HtmlStandardElementsView() {
 
+        getElement().setAttribute("style", "padding: 1em");
+        
         add(new H1("H1 Title"));
         add(new H2("H2 Title"));
         add(new H3("H3 Title"));

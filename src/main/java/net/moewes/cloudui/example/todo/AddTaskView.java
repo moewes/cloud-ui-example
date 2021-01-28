@@ -17,6 +17,8 @@ public class AddTaskView extends Div {
     @Inject
     public AddTaskView(TaskRepository repository, CloudUi ui) {
 
+        getElement().setAttribute("style", "padding: 1em");
+
         add(new H1("Add Todo"));
 
         UiComponent taskField = new UiComponent("input");

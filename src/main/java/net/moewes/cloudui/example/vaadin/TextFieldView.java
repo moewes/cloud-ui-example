@@ -24,6 +24,8 @@ public class TextFieldView extends VerticalLayout {
 
     public TextFieldView() {
 
+        getElement().setAttribute("style", "padding: 1em");
+
         FormLayout form = new FormLayout();
 
         textfield.setLabel("Text Field");
@@ -66,7 +68,15 @@ public class TextFieldView extends VerticalLayout {
         patternField.setPattern("[A-Z]{2}\\d{3,4}");
         patternField.setErrorMessage("Not a valid flight number");
         //patternField.setPreventInvalidInput(true);
-        validationLayout.add(validationField, patternField);
+
+        TextField serverInvalid = new TextField();
+        serverInvalid.setLabel("Serverside invalid");
+        serverInvalid.setErrorMessage("Message from Server");
+        serverInvalid.setValue("invalid");
+        serverInvalid.getElement().setAttribute("invalid", "true");
+
+
+        validationLayout.add(validationField, patternField, serverInvalid);
 
         Details numberDetails = new Details("Number Fields");
         add(numberDetails);

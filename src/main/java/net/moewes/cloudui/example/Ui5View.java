@@ -10,6 +10,8 @@ public class Ui5View extends Div {
 
     public Ui5View() {
 
+        getElement().setAttribute("style", "padding: var(--_ui5_card_content_padding); display: flex; flex-direction: column; gap: 0.1em");
+
         add(new Ui5Title("Ui5 Elements"));
 
         add(new Ui5Link("Avatar", "/ui5/avatar"));
@@ -36,7 +38,5 @@ public class Ui5View extends Div {
         add(new Ui5Link("Time Picker", "/ui5/timePicker"));
         add(new Ui5Link("Title", "/ui5/title"));
         add(new Ui5Link("Wizard", "/ui5/wizard"));
-
-        getElement().setAttribute("style", "display: flex; flex-direction: column; gap: 0.5em");
     }
 }

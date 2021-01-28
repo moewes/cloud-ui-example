@@ -16,6 +16,8 @@ public class TaskListView extends Div {
     @Inject
     public TaskListView(TaskRepository repository, CloudUi ui) {
 
+        getElement().setAttribute("style", "padding: 1em");
+        
         add(new H1("Todos"));
 
         repository.getTasks().forEach(item -> {

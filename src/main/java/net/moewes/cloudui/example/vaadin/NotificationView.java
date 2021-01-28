@@ -7,10 +7,12 @@ import net.moewes.cloudui.vaadin.Button;
 import net.moewes.cloudui.vaadin.Notification;
 import net.moewes.cloudui.vaadin.VerticalLayout;
 
-@CloudUiView("/vaadinNotification")
+@CloudUiView("/vaadin/notification")
 public class NotificationView extends VerticalLayout {
 
     public NotificationView() {
+
+        getElement().setAttribute("style", "padding: 1em");
 
         Arrays.stream(Notification.Position.values()).forEach(this::addNotification);
     }

@@ -6,10 +6,12 @@ import net.moewes.cloudui.vaadin.Tab;
 import net.moewes.cloudui.vaadin.Tabs;
 import net.moewes.cloudui.vaadin.VerticalLayout;
 
-@CloudUiView("/vaadinTabs")
+@CloudUiView("/vaadin/tabs")
 public class TabsView extends VerticalLayout {
 
     public TabsView() {
+
+        getElement().setAttribute("style", "padding: 1em");
 
         Tab tabOne = new Tab();
         tabOne.setInnerHtml("One");

@@ -6,10 +6,12 @@ import net.moewes.cloudui.vaadin.FormLayout;
 import net.moewes.cloudui.vaadin.VerticalLayout;
 import net.moewes.cloudui.vaadin.input.TextField;
 
-@CloudUiView("/vaadin/form")
+@CloudUiView("/vaadin/formLayout")
 public class FormLayoutView extends VerticalLayout {
 
     public FormLayoutView() {
+
+        getElement().setAttribute("style", "padding: 1em");
 
         FormLayout form = new FormLayout();
 

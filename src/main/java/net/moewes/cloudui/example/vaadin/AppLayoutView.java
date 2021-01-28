@@ -8,11 +8,13 @@ import net.moewes.cloudui.vaadin.AppLayout;
 import net.moewes.cloudui.vaadin.Tab;
 import net.moewes.cloudui.vaadin.Tabs;
 
-@CloudUiView("/vaadinAppLayout")
+@CloudUiView("/vaadin/appLayout")
 @RequestScoped
 public class AppLayoutView extends AppLayout {
 
     public AppLayoutView() {
+
+        getElement().setAttribute("style", "padding: 1em");
 
         UiComponent contentOne = new UiComponent("vaadin-item"); // TODO
         contentOne.setInnerHtml("<p>Content Tab One</p>");
