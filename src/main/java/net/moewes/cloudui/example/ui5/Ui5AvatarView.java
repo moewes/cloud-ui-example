@@ -3,17 +3,15 @@ package net.moewes.cloudui.example.ui5;
 import java.util.Arrays;
 
 import net.moewes.cloudui.annotations.CloudUiView;
-import net.moewes.cloudui.html.Div;
 import net.moewes.cloudui.ui5.Ui5Avatar;
 import net.moewes.cloudui.ui5.Ui5Panel;
-import net.moewes.cloudui.ui5.Ui5Title;
 
 @CloudUiView("/ui5/avatar")
-public class Ui5AvatarView extends Div { // TODO Layout
+public class Ui5AvatarView extends Ui5DemoBaseView {
 
     public Ui5AvatarView() {
 
-        add(new Ui5Title("Avatar", Ui5Title.Level.H1));
+        super("Avatar");
 
         Ui5Panel panel1 = new Ui5Panel("Basic Avatar", true);
         add(panel1);

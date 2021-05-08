@@ -1,10 +1,10 @@
 package net.moewes.cloudui.example.ui5;
 
+import javax.annotation.PostConstruct;
 import javax.inject.Inject;
 
 import net.moewes.cloudui.annotations.CloudUiView;
 import net.moewes.cloudui.example.Ui5View;
-import net.moewes.cloudui.html.Div;
 import net.moewes.cloudui.quarkus.runtime.CloudUi;
 import net.moewes.cloudui.ui5.Ui5Bar;
 import net.moewes.cloudui.ui5.Ui5Button;
@@ -13,14 +13,17 @@ import net.moewes.cloudui.ui5.Ui5Link;
 import net.moewes.cloudui.ui5.Ui5Panel;
 
 @CloudUiView("/ui5/bar")
-public class BarView extends Div {
+public class BarView extends Ui5DemoBaseView {
 
     @Inject
-    public BarView(CloudUi ui) {
+    CloudUi ui;
 
-        Ui5Bar bar = new Ui5Bar();
-        bar.addMiddleContent(new Ui5Label("Bar"));
-        add(bar);
+    public BarView() {
+        super("Bar");
+    }
+
+    @PostConstruct
+    public void createView() {
 
         Ui5Button home = new Ui5Button();
         home.setIcon("home");
@@ -28,7 +31,6 @@ public class BarView extends Div {
         home.addEventListener("click", event -> {
             ui.navigate(Ui5View.class);
         });
-        bar.addStartContent(home);
 
         Ui5Panel panel = new Ui5Panel("Header Bar", true);
         add(panel);

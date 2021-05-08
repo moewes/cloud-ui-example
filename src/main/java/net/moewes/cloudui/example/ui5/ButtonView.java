@@ -4,15 +4,14 @@ import net.moewes.cloudui.annotations.CloudUiView;
 import net.moewes.cloudui.html.Div;
 import net.moewes.cloudui.ui5.Ui5Button;
 import net.moewes.cloudui.ui5.Ui5Panel;
-import net.moewes.cloudui.ui5.Ui5Title;
 
 @CloudUiView("/ui5/button")
-public class ButtonView extends Div {
+public class ButtonView extends Ui5DemoBaseView {
 
     public ButtonView() {
 
-        add(new Ui5Title("Button"));
-
+        super("Button");
+        
         Div container = new Div();
         container.getElement().setAttribute("style", "display: flex; flex-direction: row; gap: 0.5em");
         Ui5Panel panel = new Ui5Panel("Basic Button", true);
