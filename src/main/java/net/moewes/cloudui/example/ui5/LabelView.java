@@ -72,7 +72,7 @@ public class LabelView extends Div {
     }
 
     // TODO Refactor
-    public class FormLayout extends UiComponent {
+    public static class FormLayout extends UiComponent {
 
         /**
          * default constructor

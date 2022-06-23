@@ -33,8 +33,8 @@ public class DateRangePickerView extends Ui5DemoBaseView {
         Ui5DateRangePicker picker2 = new Ui5DateRangePicker();
         panel2.add(picker2);
         picker2.setFormatPattern("dd/MM/YYYY");
-        picker2.setMinDate(LocalDate.of(2020, 12, 01));
-        picker2.setMaxDate(LocalDate.of(2021, 01, 31));
+        picker2.setMinDate(LocalDate.of(2020, 12, 1));
+        picker2.setMaxDate(LocalDate.of(2021, 1, 31));
         picker2.addEventListener("change", event -> {
             event.getParameter("value").ifPresent(item -> {
                 panel2.add(new Ui5Label("Your input: " + item));

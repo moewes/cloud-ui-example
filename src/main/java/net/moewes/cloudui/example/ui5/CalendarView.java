@@ -58,7 +58,7 @@ public class CalendarView extends Div {
         add(panel3);
 
         Ui5Calendar calendar3 = new Ui5Calendar();
-        calendar3.setMinDate(LocalDate.of(2021, 01, 01));
+        calendar3.setMinDate(LocalDate.of(2021, 1, 1));
         calendar3.setMaxDate(LocalDate.of(2021, 12, 31));
         panel3.add(calendar3);
 
