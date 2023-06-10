@@ -1,7 +1,5 @@
 package net.moewes.cloudui.example.vaadin;
 
-import javax.enterprise.context.RequestScoped;
-
 import net.moewes.cloudui.UiComponent;
 import net.moewes.cloudui.annotations.CloudUiView;
 import net.moewes.cloudui.vaadin.AppLayout;
@@ -9,7 +7,6 @@ import net.moewes.cloudui.vaadin.Tab;
 import net.moewes.cloudui.vaadin.Tabs;
 
 @CloudUiView("/vaadin/appLayout")
-@RequestScoped
 public class AppLayoutView extends AppLayout {
 
     public AppLayoutView() {

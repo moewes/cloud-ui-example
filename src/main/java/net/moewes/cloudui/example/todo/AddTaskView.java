@@ -2,8 +2,7 @@ package net.moewes.cloudui.example.todo;
 
 import java.util.UUID;
 
-import javax.inject.Inject;
-
+import jakarta.inject.Inject;
 import net.moewes.cloudui.UiBinder;
 import net.moewes.cloudui.UiComponent;
 import net.moewes.cloudui.annotations.CloudUiView;

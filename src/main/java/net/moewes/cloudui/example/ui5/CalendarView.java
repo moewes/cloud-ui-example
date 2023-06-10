@@ -7,8 +7,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-import javax.inject.Inject;
-
+import jakarta.inject.Inject;
 import net.moewes.cloudui.UiEvent;
 import net.moewes.cloudui.annotations.CloudUiView;
 import net.moewes.cloudui.example.Ui5View;

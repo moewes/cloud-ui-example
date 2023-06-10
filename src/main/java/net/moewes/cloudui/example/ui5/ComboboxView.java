@@ -3,8 +3,7 @@ package net.moewes.cloudui.example.ui5;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.inject.Inject;
-
+import jakarta.inject.Inject;
 import net.moewes.cloudui.annotations.CloudUiView;
 import net.moewes.cloudui.example.Ui5View;
 import net.moewes.cloudui.html.Div;

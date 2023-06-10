@@ -1,7 +1,6 @@
 package net.moewes.cloudui.example.ui5;
 
-import javax.annotation.PostConstruct;
-
+import jakarta.annotation.PostConstruct;
 import net.moewes.cloudui.annotations.CloudUiView;
 import net.moewes.cloudui.ui5.Ui5Panel;
 import net.moewes.cloudui.ui5.list.Ui5List;

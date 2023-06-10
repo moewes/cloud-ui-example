@@ -3,8 +3,7 @@ package net.moewes.cloudui.example.ui5;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.annotation.PostConstruct;
-
+import jakarta.annotation.PostConstruct;
 import net.moewes.cloudui.annotations.CloudUiView;
 import net.moewes.cloudui.example.ui5.table.Model;
 import net.moewes.cloudui.ui5.table.Ui5Table;

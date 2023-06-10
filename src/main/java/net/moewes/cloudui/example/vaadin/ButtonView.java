@@ -2,8 +2,7 @@ package net.moewes.cloudui.example.vaadin;
 
 import java.util.Arrays;
 
-import javax.annotation.PostConstruct;
-
+import jakarta.annotation.PostConstruct;
 import net.moewes.cloudui.annotations.CloudUiView;
 import net.moewes.cloudui.html.Div;
 import net.moewes.cloudui.html.Label;

@@ -2,9 +2,8 @@ package net.moewes.cloudui.example.cdibinder;
 
 import java.util.Random;
 
-import javax.annotation.PostConstruct;
-import javax.enterprise.context.ApplicationScoped;
-
+import jakarta.annotation.PostConstruct;
+import jakarta.enterprise.context.ApplicationScoped;
 import lombok.Getter;
 
 @ApplicationScoped

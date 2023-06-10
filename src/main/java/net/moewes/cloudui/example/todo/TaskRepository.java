@@ -1,10 +1,11 @@
 package net.moewes.cloudui.example.todo;
 
+import jakarta.enterprise.context.ApplicationScoped;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-import javax.enterprise.context.ApplicationScoped;
 
 @ApplicationScoped
 public class TaskRepository {

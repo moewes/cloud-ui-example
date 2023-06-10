@@ -2,8 +2,8 @@ package net.moewes.cloudui.example.cdibinder;
 
 import java.util.Random;
 
-import javax.inject.Inject;
 
+import jakarta.inject.Inject;
 import net.moewes.cloudui.UiBinder;
 import net.moewes.cloudui.UiComponent;
 import net.moewes.cloudui.annotations.CloudUiView;
